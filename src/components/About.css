@@ -6,4 +6,39 @@
     height: 100vh;
     padding: 0px;
     margin: 0px;
+    text-align: center;
+}
+.about-content{
+    max-width: 1000px;
+}
+.mycol-1{
+    height: 100vh;
+}
+.title{
+    transform: rotate(270deg);
+    font-size: 300%;
+    color: yellow;
+    display: inline-block;
+    position: relative;
+    left: 140px;
+    top: 43%;
+
+}
+.mycol-2{
+    align-items: center;
+    padding-top: 210px;
+    box-sizing: border-box;
+}
+.main-content{
+    padding: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: white;
+    opacity:0.4;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+.main-content p{
+    font-size: larger;
+    color: black;
 }

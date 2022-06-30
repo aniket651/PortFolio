@@ -5,7 +5,7 @@ export default ()=>{
 
     const skBlocks = (y) =>{
         return(
-            <div className="skill-blocks">
+            <div key={y} className="skill-blocks">
                 {y}
             </div>
         )
