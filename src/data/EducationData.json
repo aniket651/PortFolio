@@ -1,0 +1,23 @@
+[
+    {
+        "id":1,
+        "school":"Birla Institute Of Technology, Mesra, Ranchi",
+        "year":"2020 - 2024",
+        "degree":"B.Tech. - Electronics & Communication Engineering ",
+        "grades":"CGPA: 8.97 / 10.00"
+    },
+    {
+        "id":2,
+        "school":"Sunbeam English School Bhagwanpur, Varanasi ",
+        "year":"2019",
+        "degree":"12th || CBSE",
+        "grades":"Percentage: 87.00 / 100.00"
+    },
+    {
+        "id":3,
+        "school":"Sunbeam English School Bhagwanpur, Varanasi ",
+        "year":"2017",
+        "degree":"10th || CBSE",
+        "grades":"CGPA: 9.80 / 10.00"
+    }
+]

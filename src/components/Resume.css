@@ -1,0 +1,45 @@
+.Resume{
+    /* background-color:  #343333; */
+    background-image: url('/src/images/wooden-texture.jpg');
+    /* background-blend-mode: overlay; */
+    background-size: cover;
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+}
+h1{
+    display: inline-block;
+    max-width:min-content;
+    padding-inline: 20px;
+    border-bottom: 5px solid darkred;
+    color: silver;
+}
+.main-heading{
+    font-size: 400%;
+    text-align: center;
+}
+.submenu{
+    position: absolute;
+    display: inline-block;
+    width:50px;
+    height:316px;
+    background-color: black;
+    z-index: 2;
+}
+.parent-row-1{
+    box-sizing: border-box;
+    padding-top: 50px;
+    padding-left:150px;
+    padding-right:100px;
+    /* background-size: cover; */
+}
+.row-1{
+    background-color: white;
+    opacity:0.4;
+}
+.resume-topics{
+    font-size: 200%;
+    padding-top:15px;
+    padding-bottom: 15px;
+    padding-left: 87px;
+}

@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
+.home,.myrow1{
+    background-color:  #343333;
+    background-image: url('/src/images/hustle-1.jpg');
+    background-blend-mode: overlay;
+    background-size: cover;
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+}
+.myrow1{
+    padding-left: 150px !important; 
+    padding-right: 100px !important;
+}
+.blob-div .home{
+    overflow: hidden;
+}
+.blob{
+    box-sizing: border-box;
+    opacity: 0.5;
+    animation: 10s infinite blob-rotation;
+}
+.blob-div{
+    text-align: center;
+    align-self: center;
+    overflow: hidden;
+}
+.textual{
+    font-family: 'Anek Malayalam', sans-serif;
+    align-self: center;
+}
+
+.line1{
+    color: #ffffff;
+    font-size: 300%;
+    animation: 3s slide-up;
+}
+.line2{
+    color: #ffffff;
+    font-size: 450%;
+    animation: 3s slide-up;
+}
+.myName{
+    color: #ffca18;
+    font-size: larger;
+}
+.line3{
+    color: #ffffff;
+    position: relative;
+    bottom: 20px;
+    font-size: 150%;
+}
+
+@keyframes blob-rotation{
+    from{
+        transform: rotate(0deg);
+        /* transform: skewY(0deg); */
+    }
+    50%{
+        transform: rotate(360deg);
+        /* transform: skewY(20deg); */
+    }
+    to{
+        transform: rotate(0deg);
+        /* transform: skewY(0deg); */
+    }
+}
+@keyframes slide-up {
+    from{
+        height: 0%;
+        transform: translate3d(0, 100%, 0); 
+    }
+    to{
+        height: 100%;
+        transform: translate3d(0, 0%, 0); 
+    }
+}
