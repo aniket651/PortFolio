@@ -1,7 +1,8 @@
 .About-me{
     /* background-color:  #343333; */
-    background-image: url('/src/images/pexels-pixabay-276514.jpg');
+    /* background-image: url('/src/images/pexels-pixabay-276514.jpg'); */
     /* background-blend-mode: overlay; */
+    background-image: linear-gradient(to right top, #d16b6b, #d24f70, #cd307e, #bd0b93, #9d00ae, #b800a8, #cf00a2, #e4009b, #ff4173, #ff8151, #ffbd42, #fbf25f);
     background-size: cover;
     height: 100vh;
     padding: 0px;

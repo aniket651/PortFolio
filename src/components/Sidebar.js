@@ -18,7 +18,7 @@ export default ({resumeClick,homeClick,aboutClick,contactClick})=>(
 
         </div>
         <div className="social-media">
-            <FontAwesomeIcon className='home-icon2' icon={faGithub} />
+            <a href="https://github.com/aniket651"><FontAwesomeIcon className='home-icon2' icon={faGithub} /></a>
         </div>
         {/* <h1>Hello World</h1> */}
     </div>

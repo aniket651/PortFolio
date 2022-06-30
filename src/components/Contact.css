@@ -1,7 +1,8 @@
 .Contact-me{
     /* background-color:  #343333; */
-    background-image: url('/src/images//ancient-one.jpg');
+    /* background-image: url('/src/images//ancient-one.jpg'); */
     /* background-blend-mode: overlay; */
+    background-image: linear-gradient(to right top, #ffffff, #d4d1e6, #aba5cc, #827ab3, #595299, #5f4194, #692c8b, #73007e, #a70073, #d2005c, #f0003b, #fe0000);
     background-size: cover;
     height: 100vh;
     padding: 0px;

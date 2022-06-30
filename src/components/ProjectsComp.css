@@ -2,17 +2,19 @@
     padding-top: 1rem;
     padding-bottom: 1rem;
     color: black;
+    font-size: 120%;
 }
 .name{
     font-size: larger;
     color: blueviolet;
+    font-weight:bold
 }
 .tech{
-    color:rgb(31, 0, 169);
+    color:rgb(255, 0, 0);
 
 }
 .skill-blocks{
     display: inline;
     padding: 0.5rem;
-    color:rgb(210, 0, 196);
+    color:rgb(0, 47, 255);
 }

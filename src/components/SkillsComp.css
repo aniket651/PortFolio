@@ -14,5 +14,6 @@
 .skill-blocks{
     display: inline;
     padding: 0.5rem;
-    color:rgb(210, 0, 196);
+    color:rgb(38, 0, 228);
+    font-size: 120%;
 }

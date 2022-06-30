@@ -1,9 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:700');
 
+
+:root{
+    --primary: hsla(245,97%,63%,0.65);
+    --secondary: rgba(183, 56, 237, 0.65);
+}
 .home,.myrow1{
-    background-color:  #343333;
+    /* background-color:  #343333;
     background-image: url('/src/images/hustle-1.jpg');
-    background-blend-mode: overlay;
+    background-blend-mode: overlay; */
+    /* background-image: linear-gradient(to right, #05007e, #3a0090, #5e00a2, #7f00b2, #a000c2); */
+    background: linear-gradient(to right, #04007ee1, #3a0090db, #5e00a2cd, #8000b2e3, #9e00c2e4),
+                url('/src/images/hustle-1.jpg') no-repeat center center / cover;
     background-size: cover;
     height: 100vh;
     padding: 0px;

@@ -1,7 +1,8 @@
 .Resume{
     /* background-color:  #343333; */
-    background-image: url('/src/images/wooden-texture.jpg');
+    /* background-image: url('/src/images/wooden-texture.jpg'); */
     /* background-blend-mode: overlay; */
+    background-image: linear-gradient(to right top, #010c6f, #4f0071, #79006e, #9b0068, #b80060, #c90059, #d90e50, #e62045, #ee2c3b, #f5382e, #fb461e, #fe5400);
     background-size: cover;
     height: 100vh;
     padding: 0px;
@@ -42,4 +43,7 @@ h1{
     padding-top:15px;
     padding-bottom: 15px;
     padding-left: 87px;
+}
+.render-col{
+    font-size: 200%;
 }
