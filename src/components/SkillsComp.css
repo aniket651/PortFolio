@@ -1,0 +1,18 @@
+.sk-card{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: black;
+}
+/* .name{
+    font-size: larger;
+    color: blueviolet;
+}
+.tech{
+    color:rgb(31, 0, 169);
+
+} */
+.skill-blocks{
+    display: inline;
+    padding: 0.5rem;
+    color:rgb(210, 0, 196);
+}

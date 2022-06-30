@@ -1,36 +1,39 @@
 import './Resume.css';
 import Sidebar from './Sidebar';
-import EducationComp from './EducationComp';
+import EducationComp from './EducationComp.js';
+import ProjectsComp from './ProjectsComp.js';
+import InterestsComp from './InterestsComp.js';
+import SkillsComp from './SkillsComp.js';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
 import studentimage from "../svg-images/student-g6fc0d00bd_1280.png";
 import { useState } from 'react';
 
-let rendringElement = <EducationComp />;
+// let rendringElement = <EducationComp />;
 
-const ProjectsComp = () => {
-    return (
-        <div className="container-fluid">
+// const ProjectsComp = () => {
+//     return (
+//         <div className="container-fluid">
 
-        </div>
-    )
-}
+//         </div>
+//     )
+// }
 
-const InterestsComp = () => {
-    return (
-        <div className="container-fluid">
+// const InterestsComp = () => {
+//     return (
+//         <div className="container-fluid">
 
-        </div>
-    )
-}
+//         </div>
+//     )
+// }
 
-const SkillsComp = () => {
-    return (
-        <div className="container-fluid">
+// const SkillsComp = () => {
+//     return (
+//         <div className="container-fluid">
 
-        </div>
-    )
-}
+//         </div>
+//     )
+// }
 // const educationData = async () => {
 //     const edarr = await fetch("../data/EducationData.json")
 //     let data = await edarr.json();
@@ -54,7 +57,8 @@ export default () => {
         setRendringElement(<InterestsComp />);
     }
 
-    const arr = ["Education", "Skills", "Projects", "Interests"]
+    // const arr = ["Education", "Skills", "Projects", "Interests"]
+    const arr = ["Education", "Skills", "Projects"]
     const ResumeTopics = (x) => {
         return (
             <div key={x} className="resume-topics" id={x} onClick={() => {
@@ -84,7 +88,7 @@ export default () => {
             <div className="container-fluid parent-row-1">
                 <div className="row row-1">
                     <div className="col-4">
-                        <div className="submenu"></div>
+                        {/* <div className="submenu"></div> */}
                         {myarr}
                     </div>
                     <div className="col-8">
