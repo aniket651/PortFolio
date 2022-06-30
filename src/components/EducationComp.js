@@ -1,17 +1,25 @@
 import { useState } from 'react';
-
-export default (props) => {
-    return (
-        <div className="container-fluid ">
-            <div className="row">
-                <div className="col-9">{props.school}</div>
-                <div className="col-3">{props.year}</div>
+import './EducationComp.css';
+import myary from '../data/EducationData.json';
+export default ()=>{
+    const edcomp = (x) => {
+        return (
+            <div className="container-fluid ed-card" key={x.id}>
+                <div className="row">
+                    <div className="col-9 name lefty">{x.school}</div>
+                    <div className="col-3 year righty">{x.year}</div>
+                </div>
+                <div className="row">
+                    <div className="col-7 degree lefty">{x.degree}</div>
+                    <div className="col-5 grades righty">{x.grades}</div>
+                </div>
             </div>
-            <div className="row">
-                <div className="col-7">{props.degree}</div>
-                <div className="col-5">{props.grades}</div>
-            </div>
+        )
+    }
+    const myarr = myary.map(edcomp)
+    return(
+        <div className="co">
+            {myarr}
         </div>
     )
 }
-

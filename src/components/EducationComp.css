@@ -1,0 +1,15 @@
+.ed-card{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: black;
+}
+.lefty{
+    text-align: left;
+}
+.righty{
+    text-align-last: right;
+}
+.name{
+    font-size: larger;
+    color: blueviolet;
+}
