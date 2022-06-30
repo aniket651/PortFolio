@@ -1,5 +1,6 @@
 import './Resume.css';
 import Sidebar from './Sidebar';
+import EducationComp from './EducationComp';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
 import studentimage from "../svg-images/student-g6fc0d00bd_1280.png";
@@ -28,63 +29,96 @@ const SkillsComp = () => {
         </div>
     )
 }
-const educationData = async () => {
-    const edarr = await fetch("../data/EducationData.json")
-    let data = await edarr.json();
-    return data;
-}
-
-const EducationComp = async () => {
-    const educationArray = await educationData();
-    
-    const edcomp = (x) => {
-        // const a = x.id
-        // const b = x.school
-        // const c = x.year
-        // const d = x.degree
-        // const e = x.grades
-        return (
-            <div key = {x.id } className="container-fluid ">
-                <div className="row">
-                    <div className="col-9">{x.school}</div>
-                    <div className="col-3">{x.year}</div>
-                </div>
-                <div className="row">
-                    <div className="col-7">{x.degree}</div>
-                    <div className="col-5">{x.grades}</div>
-                </div>
-            </div>
-        )
-    }
-    const eArray = educationArray.map(edcomp)
-    return (
-        <div className="container-fluid">
-            {eArray}
-        </div>
-        
-    )
-}
+// const educationData = async () => {
+//     const edarr = await fetch("../data/EducationData.json")
+//     let data = await edarr.json();
+//     return data;
+// }
 
 
 export default () => {
     const [componentToBeRendered, setComponentToBeRendered] = useState(<EducationComp />)
+    const [data,setData] = useState([])
+    const [edCompArr,setEdCompArr] = useState(data.map(arrayOfComponents))
+
+    const renderEducation = async ()=>{
+        console.log("into renderEducation")
+        let response = await fetch("./EducationData.json")
+        let edData = await response.json()
+        console.log(edData)
+        setData(edData);
+        setEdCompArr(data.map(arrayOfComponents))
+        setComponentToBeRendered(<EducationComp />)
+    }
+    const renderSkills = async ()=>{
+        let response = await fetch("../data/SkillsData.json")
+        let skData = await response.json()
+        setData(skData);
+        setComponentToBeRendered(<SkillsComp />)
+    }
+    const renderProjects = async ()=>{
+        let response = await fetch("../data/ProjectsData.json")
+        let prData = await response.json()
+        setData(prData);
+        setComponentToBeRendered(<ProjectsComp />)
+    }
+    const renderInterests = async ()=>{
+        let response = await fetch("../data/EducationData.json")
+        let itData = await response.json()
+        setData(itData);
+        setComponentToBeRendered(<InterestsComp />)
+    }
+
+    const arrayOfComponents = (mydata)=>{
+        if(componentToBeRendered===<EducationComp />){
+            return(
+                <div className="edu" key={mydata.id}>
+                    <EducationComp school={mydata.school} year={mydata.year} degree={mydata.degree} grades={mydata.grades} />
+                </div>
+            )
+        }
+        else if(componentToBeRendered===<SkillsComp />){
+            return(
+                <div className="skl" key={mydata.id}>
+                    <SkillsComp skldata = {mydata} />
+                </div>
+            )
+        }
+        else if(componentToBeRendered===<ProjectsComp />){
+            return(
+                <div className="pro" key={mydata.id}>
+                    <ProjectsComp name={mydata.name} techStacksInvolved={mydata.techStacksInvolved} description={mydata.description} />
+                </div>
+            )
+        }
+        return(
+            <div className="edu" key={mydata.id}>
+                <EducationComp school={mydata.school} year={mydata.year} degree={mydata.degree} grades={mydata.grades} />
+            </div>
+        )
+    }
+
+
+    // let edCompArr = data.map(arrayOfComponents)
+
+
+
+    
     const arr = ["Education", "Skills", "Projects", "Interests"]
     const ResumeTopics = (x) => {
         return (
-            <div key={x} className="resume-topics" id={x} onClick={(event) => {
-                console.log(event.target);
-                //chage document using this event.target as dom element
-                if (x == "Education") {
-                    setComponentToBeRendered(<EducationComp />)
+            <div key={x} className="resume-topics" id={x} onClick={()=>{
+                if(x==="Education"){
+                    renderEducation()
                 }
-                else if (x == "Skills") {
-                    setComponentToBeRendered(<SkillsComp />)
+                if(x==="Skills"){
+                    renderSkills()
                 }
-                else if (x == "Projects") {
-                    setComponentToBeRendered(<ProjectsComp />)
+                if(x==="Projects"){
+                    renderProjects()
                 }
-                else if (x == "Interests") {
-                    setComponentToBeRendered(<InterestsComp />)
+                if(x==="Interests"){
+                    renderInterests()
                 }
             }}>
                 {x}
@@ -92,6 +126,7 @@ export default () => {
         )
     }
     const myarr = arr.map(ResumeTopics)
+
     return (
         <div className="Resume">
             {/* <Grads /> */}
@@ -103,7 +138,8 @@ export default () => {
                         {myarr}
                     </div>
                     <div className="col-8">
-                        {componentToBeRendered}
+                        {edCompArr}
+                        {console.log(data)}
                     </div>
                 </div>
 

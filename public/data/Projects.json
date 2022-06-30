@@ -2,13 +2,13 @@
     {
         "id":1,
         "name":"My Portfolio",
-        "techStacks-involved":["HTML","CSS","JavaScript","ReactJs"],
+        "techStacksInvolved":["HTML","CSS","JavaScript","ReactJs"],
         "description":"This is my official portfolio."
     },
     {
         "id":2,
         "name":"Sorting Visualizer",
-        "techStacks-involved":["HTML","CSS","JavaScript"],
+        "techStacksInvolved":["HTML","CSS","JavaScript"],
         "description": "This is an Sorting Visualizer. It helps one to visually see how any sorting algorithm works.Features are-***1>>wide range of size of array.***2>>speed can be changed so that one can follow up with the visualizations"
     }
 ]
