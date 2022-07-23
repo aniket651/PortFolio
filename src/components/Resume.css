@@ -35,8 +35,9 @@ h1{
     /* background-size: cover; */
 }
 .row-1{
-    background-color: white;
-    opacity:0.4;
+    background-color: rgba(255, 255, 255, 0.199);
+    box-sizing: border-box;
+    /* opacity:0.4; */
 }
 .resume-topics{
     font-size: 200%;
@@ -44,6 +45,15 @@ h1{
     padding-bottom: 15px;
     padding-left: 87px;
 }
-.render-col{
-    font-size: 200%;
+.resume-topics{
+    cursor: pointer;
 }
+.resume-topics:hover{
+    border-right:3px solid #5c022e41;
+    border-bottom:5px solid #5c022e41;
+
+    /* box-shadow: #010c6f; */
+}
+/* .render-col{
+    font-size: 130%;
+} */

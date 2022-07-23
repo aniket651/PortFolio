@@ -53,7 +53,7 @@ const Blob = () => {
 export default () =>
 (
     <div className='home ' >
-        
+
         {/* <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, reiciendis consequatur numquam, cupiditate eligendi soluta dolor hic doloremque minus animi eum saepe, ipsa quod. Voluptas ipsum officiis quos laborum cupiditate!</p> */}
         <div className="row container-fluid myrow1">
             {/* <div className="side-bar col-2"> */}
@@ -71,7 +71,10 @@ export default () =>
                     <span>CP enthusiast</span>
                 </div>
                 <div className="buttons-here">
-                    <button type="button" className="btn btn-warning"><FontAwesomeIcon  icon={ faDownload } /> Resume</button>
+                    <a
+                        href="https://drive.google.com/file/d/1EkyKGSD2225OOVRlkE4rQbibeJlgH75Z/view?usp=sharing"
+                        download target="_blank"
+                    ><button type="button" className="btn btn-warning"><FontAwesomeIcon icon={faDownload} /> Resume </button></a>
                 </div>
                 {/* <div className="row container-fluid button-row">
                     <div className="col-6">

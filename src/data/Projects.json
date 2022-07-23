@@ -9,6 +9,6 @@
         "id":2,
         "name":"Sorting Visualizer",
         "techStacksInvolved":[" HTML "," CSS "," JavaScript "],
-        "description": "This is an Sorting Visualizer.\n It helps one to visually see how any sorting algorithm works.Features are-\n1>>wide range of size of array.\n2>>speed can be changed so that one can follow up with the visualizations"
+        "description": "This is an Sorting Visualizer.It helps one to visually see how any sorting algorithm works.Features are-1>>wide range of size of array.2>>speed can be changed so that one can follow up with the visualizations"
     }
 ]

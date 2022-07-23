@@ -63,6 +63,7 @@ export default () => {
         return (
             <div key={x} className="resume-topics" id={x} onClick={() => {
                 if (x === "Education") {
+                    
                     renderEducation()
                 }
                 if (x === "Skills") {
@@ -70,9 +71,6 @@ export default () => {
                 }
                 if (x === "Projects") {
                     renderProjects()
-                }
-                if (x === "Interests") {
-                    renderInterests()
                 }
             }}>
                 {x}
@@ -91,7 +89,7 @@ export default () => {
                         {/* <div className="submenu"></div> */}
                         {myarr}
                     </div>
-                    <div className="col-8">
+                    <div className="col-8 render-col">
                         { rendringElement }
                     </div>
                 </div>

@@ -6,11 +6,12 @@
 }
 .name{
     font-size: larger;
-    color: blueviolet;
+    color: #430979;
     font-weight:bold
 }
 .tech{
-    color:rgb(255, 0, 0);
+    color:rgb(197, 197, 197);
+    /* font-weight: 500; */
 
 }
 .skill-blocks{
