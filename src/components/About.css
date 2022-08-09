@@ -5,38 +5,44 @@
     background-image: linear-gradient(to right top, #d16b6b, #d24f70, #cd307e, #bd0b93, #9d00ae, #b800a8, #cf00a2, #e4009b, #ff4173, #ff8151, #ffbd42, #fbf25f);
     background-size: cover;
     height: 100vh;
-    padding: 0px;
-    margin: 0px;
+    padding: 0rem;
+    margin: 0rem;
     text-align: center;
 }
 .about-content{
-    max-width: 1000px;
+    max-width: 100.0rem;
 }
 .mycol-1{
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+/* flex-direction: ; */
 }
 .title{
     transform: rotate(270deg);
     font-size: 300%;
     color: yellow;
-    display: inline-block;
-    position: relative;
-    left: 140px;
-    top: 43%;
+    display: block;
+    /* position: relative; */
+    /* left: 14.0rem; */
+    /* top: 43vh; */
 
 }
 .mycol-2{
+    display: flex;
     align-items: center;
-    padding-top: 210px;
+    /* padding-top: 33vh; */
     box-sizing: border-box;
 }
 .main-content{
-    padding: 30px;
-    margin-left: 100px;
-    margin-right: 100px;
-    background-color: white;
-    opacity:0.4;
-    border-radius: 20px;
+    /* align-items: center; */
+    padding: 3.0rem;
+    margin-left: 10.0rem;
+    margin-right: 10.0rem;
+    background-color: rgba(255, 255, 255, 0.24);
+    /* opacity:0.4; */
+    border-radius: 2.0rem;
     box-sizing: border-box;
 }
 .main-content p{

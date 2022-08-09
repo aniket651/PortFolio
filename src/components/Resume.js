@@ -2,7 +2,7 @@ import './Resume.css';
 import Sidebar from './Sidebar';
 import EducationComp from './EducationComp.js';
 import ProjectsComp from './ProjectsComp.js';
-import InterestsComp from './InterestsComp.js';
+// import InterestsComp from './InterestsComp.js';
 import SkillsComp from './SkillsComp.js';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
@@ -53,9 +53,9 @@ export default () => {
     const renderProjects = () => {
         setRendringElement(<ProjectsComp />);
     }
-    const renderInterests = () => {
-        setRendringElement(<InterestsComp />);
-    }
+    // const renderInterests = () => {
+    //     setRendringElement(<InterestsComp />);
+    // }
 
     // const arr = ["Education", "Skills", "Projects", "Interests"]
     const arr = ["Education", "Skills", "Projects"]

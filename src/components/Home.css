@@ -42,12 +42,14 @@
 .line1{
     color: #ffffff;
     font-size: 300%;
-    animation: 3s slide-up;
+    /* animation: 3s slide-up; */
+    animation: 3s fade-in;
 }
 .line2{
     color: #ffffff;
     font-size: 450%;
-    animation: 3s slide-up;
+    /* animation: 3s slide-up; */
+    animation: 3s fade-in;
 }
 .myName{
     color: #ffca18;
@@ -82,5 +84,15 @@
     to{
         height: 100%;
         transform: translate3d(0, 0%, 0); 
+    }
+}
+@keyframes fade-in {
+    from{
+        opacity: 0;
+        /* transform: translate3d(0, 100%, 0);  */
+    }
+    to{
+        opacity: 1;
+        /* transform: translate3d(0, 0%, 0);  */
     }
 }
