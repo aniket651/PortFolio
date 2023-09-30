@@ -72,7 +72,7 @@ export default () =>
                 </div>
                 <div className="buttons-here">
                     <a
-                        href="https://drive.google.com/file/d/1EkyKGSD2225OOVRlkE4rQbibeJlgH75Z/view?usp=sharing"
+                        href="https://github.com/aniket651/Resume/blob/main/AniketResume.pdf"
                         download target="_blank"
                     ><button type="button" className="btn btn-warning"><FontAwesomeIcon icon={faDownload} /> Resume </button></a>
                 </div>
